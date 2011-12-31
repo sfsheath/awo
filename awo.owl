@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+[
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+]>
+<rdf:RDF xmlns="http://example.org/awo#" xml:base="http://example.org/awo#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo xml:lang="en">v.00 creation through first mucking about. not stable</owl:versionInfo>
+    <rdfs:comment xml:lang="en">An ontology for the Ancient World.</rdfs:comment>
+  </owl:Ontology>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   AWO Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////
+ -->
+  <owl:TransitiveProperty rdf:about="#is"></owl:TransitiveProperty>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   OWL Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     -->
+  <owl:Class rdf:about="#Office_Holder">
+    <rdfs:label xml:lang="en">Office Holder</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Office_Holder">
+    <rdfs:label xml:lang="en">Roman Office Holder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Office_Holder" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Imperial_Office_Holder">
+    <rdfs:label xml:lang="en">Roman Imperial Office Holder</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is" />
+        <owl:hasValue rdf:resource="#Roman_Emperor" />
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Roman_Office_Holder" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Republican_Office_Holder">
+    <rdfs:label xml:lang="en">Roman Imperial Office Holder</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is" />
+        <owl:hasValue rdf:resource="#Roman_Dictator" />
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Roman_Office_Holder" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Religious_Office_Holder">
+    <rdfs:label xml:lang="en">Roman Religious Office Holder</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is" />
+        <owl:hasValue rdf:resource="#Pontifex_Maximus" />
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Roman_Office_Holder" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Office">
+    <owl:subClassOf rdf:resource="Office" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Imperial_Office">
+    <owl:subClassOf rdf:resource="#Roman_Office" />
+  </owl:Class>
+  <owl:Class rdf:about="#Roman_Republican_Office">
+    <owl:subClassOf rdf:resource="#Roman_Office" />
+  </owl:Class>
+  <owl:Class rdf:about="#MaterialClassificationScheme">
+    <rdfs:subClassOf rdf:resource="&skos;Concept" />
+  </owl:Class>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   OWL Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     -->
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   Schema.org Person
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     -->
+  <owl:Thing rdf:about="#Augustus">
+    <rdfs:label>Augustus</rdfs:label>
+    <rdf:type rdf:resource="http://schema.org/Person" />
+    <is rdf:resource="#Roman_Emperor" />
+    <is rdf:resource="#Pontifex_Maximus" />
+    <is rdf:resource="#Tribune" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Augustus" />
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/18013086" />
+  </owl:Thing>
+  <owl:Thing rdf:about="#Lucius_Cornelius_Sulla">
+    <rdfs:label>Lucius Cornelius Sulla</rdfs:label>
+    <rdf:type rdf:resource="http://schema.org/Person" />
+    <is rdf:resource="#Roman_Dictator" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Lucius_Cornelius_Sulla" />
+  </owl:Thing>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   awo Anciently Attested Offices and Offices Defined by Modern Scholarship
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     -->
+  <owl:Thing rdf:about="#Pontifex_Maximus">
+    <rdfs:label xml:lang="latin">Pontifex Maximus</rdfs:label>
+    <rdf:type rdf:resource="Roman_Religious_Office" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Pontifex_Maximus" />
+  </owl:Thing>
+  <owl:Thing rdf:about="#Roman_Dictator">
+    <rdfs:label xml:lang="en">Roman Dictator</rdfs:label>
+    <rdf:type rdf:resource="#Roman_Republican_Office" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Dictator" />
+  </owl:Thing>
+  <owl:Thing rdf:about="#Roman_Emperor">
+    <rdfs:label xml:lang="en">Roman Emperor</rdfs:label>
+    <rdf:type rdf:resource="#Roman_Imperial_Office" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Emperor" />
+  </owl:Thing>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   awo Material Classification Schemes
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     -->
+  <owl:Thing rdf:about="#African_red_slip">
+    <rdfs:label xml:lang="en">African Red Slip</rdfs:label>
+    <rdf:type rdf:resource="#MaterialClassificationScheme" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/African_red_slip" />
+  </owl:Thing>
+</rdf:RDF>
