@@ -1,0 +1,287 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.2="http://example.org/"
+    xmlns:j.1="http://example.org/awo#"
+    xmlns:j.3="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://example.org/awo#Lucius_Cornelius_Sulla">
+    <j.1:is rdf:resource="http://dbpedia.org/page/Roman_Dictator"/>
+    <j.1:is rdf:resource="http://example.org/awo#Roman_Dictator"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Lucius_Cornelius_Sulla"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Lucius_Cornelius_Sulla"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#MaterialClassificationScheme">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Dictator">
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Dictator"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Roman_Dictator"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Pontifex_Maximus">
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Pontifex_Maximus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/Roman_Religious_Office"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Religious_Office_Holder">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Office">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Tribune">
+    <owl:sameAs rdf:resource="http://example.org/awo#Tribune"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/Roman_Dictator">
+    <owl:sameAs rdf:resource="http://example.org/awo#Roman_Dictator"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Dictator"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/18013086">
+    <j.1:is rdf:resource="http://example.org/awo#Roman_Emperor"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Roman_Emperor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office_Holder"/>
+    <j.1:is rdf:resource="http://example.org/awo#Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/18013086"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Augustus"/>
+    <j.1:is rdf:resource="http://example.org/awo#Tribune"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Augustus"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Republican_Office">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/Pontifex_Maximus">
+    <owl:sameAs rdf:resource="http://example.org/awo#Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Pontifex_Maximus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/Roman_Religious_Office"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#African_red_slip">
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/African_red_slip"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#African_red_slip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Imperial_Office_Holder">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Office"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/Roman_Religious_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Republican_Office"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#Office_Holder"/>
+    <owl:disjointWith rdf:resource="http://example.org/Roman_Religious_Office"/>
+    <owl:disjointWith rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <owl:disjointWith rdf:resource="http://schema.org/Person"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/Augustus">
+    <j.1:is rdf:resource="http://example.org/awo#Roman_Emperor"/>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/18013086"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Roman_Emperor"/>
+    <j.1:is rdf:resource="http://example.org/awo#Pontifex_Maximus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Augustus"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office_Holder"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Augustus"/>
+    <j.1:is rdf:resource="http://example.org/awo#Tribune"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Office_Holder">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Republican_Office_Holder">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Office">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/African_red_slip">
+    <owl:sameAs rdf:resource="http://example.org/awo#African_red_slip"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/African_red_slip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://example.org/awo#MaterialClassificationScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/Lucius_Cornelius_Sulla">
+    <j.1:is rdf:resource="http://dbpedia.org/page/Roman_Dictator"/>
+    <j.1:is rdf:resource="http://example.org/awo#Roman_Dictator"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Lucius_Cornelius_Sulla"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Lucius_Cornelius_Sulla"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Republican_Office_Holder"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Augustus">
+    <j.1:is rdf:resource="http://example.org/awo#Tribune"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Imperial_Office_Holder"/>
+    <j.1:is rdf:resource="http://example.org/awo#Roman_Emperor"/>
+    <j.1:is rdf:resource="http://example.org/awo#Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Augustus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Religious_Office_Holder"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Pontifex_Maximus"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Augustus"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office_Holder"/>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/18013086"/>
+    <j.1:is rdf:resource="http://dbpedia.org/page/Roman_Emperor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Office_Holder">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office_Holder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office_Holder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Person">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://schema.org/Person"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Emperor">
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Emperor"/>
+    <owl:sameAs rdf:resource="http://example.org/awo#Roman_Emperor"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/Roman_Emperor">
+    <owl:sameAs rdf:resource="http://example.org/awo#Roman_Emperor"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Roman_Emperor"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Office"/>
+    <rdf:type rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Roman_Religious_Office">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/Roman_Religious_Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/Roman_Religious_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/awo#Roman_Imperial_Office">
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Office"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Office"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/awo#Roman_Imperial_Office"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
