@@ -68,10 +68,10 @@
     <owl:subClassOf rdf:resource="Office" />
   </owl:Class>
   <owl:Class rdf:about="#Roman_Imperial_Office">
-    <owl:subClassOf rdf:resource="#Roman_Office" />
+    <rdfs:subClassOf rdf:resource="#Roman_Office" />
   </owl:Class>
   <owl:Class rdf:about="#Roman_Republican_Office">
-    <owl:subClassOf rdf:resource="#Roman_Office" />
+    <rdfs:subClassOf rdf:resource="#Roman_Office" />
   </owl:Class>
   <owl:Class rdf:about="#MaterialClassificationScheme">
     <rdfs:subClassOf rdf:resource="&skos;Concept" />
