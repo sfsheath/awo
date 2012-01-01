@@ -7,7 +7,13 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
 ]>
-<rdf:RDF xmlns="http://example.org/awo#" xml:base="http://example.org/awo#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+<rdf:RDF xmlns="http://example.org/awo#"
+   xml:base="http://example.org/awo#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema="http://schema.org/docs/schemaorg.owls"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"  >
   <owl:Ontology rdf:about="">
     <owl:versionInfo xml:lang="en">v.00 creation through first mucking about. not stable</owl:versionInfo>
     <rdfs:comment xml:lang="en">An ontology for the Ancient World.</rdfs:comment>
@@ -19,7 +25,13 @@
     //
     ///////////////////////////////////////////////////////////////////////////
  -->
-  <owl:TransitiveProperty rdf:about="#is"></owl:TransitiveProperty>
+  <owl:TransitiveProperty rdf:about="#is">
+   <rdfs:domain="&owl;Thing"/>
+   <rdfs:range="&owl;Thing"/>
+  </owl:TransitiveProperty>
+  <owl:ObjectProperty rdf:about="#is_not">
+   <!-- not used yet but here as a placeholder for an idea -->
+  </owl:ObjectProperty>
   <!-- 
     ///////////////////////////////////////////////////////////////////////////
     //
@@ -97,6 +109,7 @@
   <owl:Thing rdf:about="#Augustus">
     <rdfs:label>Augustus</rdfs:label>
     <rdf:type rdf:resource="http://schema.org/Person" />
+    <schema:birthDate>-0063-09-23</schema:birthDate>
     <is rdf:resource="#Roman_Emperor" />
     <is rdf:resource="#Pontifex_Maximus" />
     <is rdf:resource="#Tribune" />
@@ -108,14 +121,27 @@
     <rdf:type rdf:resource="http://schema.org/Person" />
     <is rdf:resource="#Roman_Dictator" />
     <owl:sameAs rdf:resource="http://dbpedia.org/page/Lucius_Cornelius_Sulla" />
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/84037378" />
+  </owl:Thing>
+  <owl:Thing rdf:about="#Ptolemy">
+    <rdfs:label>Ptolemy</rdfs:label>
+    <rdf:type rdf:resource="http://schema.org/Person" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Ptolemy" />
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/54152998" />
+    <is rdf:resource="#Astronmer"/>
   </owl:Thing>
   <!-- 
     ///////////////////////////////////////////////////////////////////////////
     //
     //   awo Anciently Attested Offices and Offices Defined by Modern Scholarship
+    //   also other "roles" defined in Wikipedia
     //
     ///////////////////////////////////////////////////////////////////////////
      -->
+  <owl:Thing rdf:about="#Astronomer">
+    <rdfs:label xml:lang="en">Astronomer</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/page/Astronomer" />
+  </owl:Thing>
   <owl:Thing rdf:about="#Pontifex_Maximus">
     <rdfs:label xml:lang="latin">Pontifex Maximus</rdfs:label>
     <rdf:type rdf:resource="Roman_Religious_Office" />
@@ -134,7 +160,7 @@
   <!-- 
     ///////////////////////////////////////////////////////////////////////////
     //
-    //   awo Material Classification Schemes
+    //   awo Modern Material Classification Schemes
     //
     ///////////////////////////////////////////////////////////////////////////
      -->
